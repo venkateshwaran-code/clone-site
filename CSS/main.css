@@ -1,0 +1,293 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+nav
+{
+    margin: 0;
+    padding: auto;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(128, 52, 199);
+    color: white;
+    position: fixed;
+    box-shadow: 0 0 15px 0#1e2cc7;
+}
+.navbar-ul
+{
+    float: right;
+}
+.navbar-li
+{
+    display: inline-block;
+    padding-right: 200px;
+    padding-top: 28px;
+}
+.a-link
+{
+    color: white;
+    text-decoration: none;
+}
+.a-link:hover{
+    color: white;
+}
+.venkat
+{
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    float: left;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.venkat:hover{
+    color: white;
+}
+.checkbtn
+{
+    color: white;
+    font-size: 25px;
+    float: right;
+    cursor: pointer;
+    display: none;
+    padding-right: 75px;
+    padding-top: 25px;
+}
+#check
+{
+    display: none;
+}
+@media screen and (max-width: 950px)
+{
+    nav{
+        margin: 0;
+        padding: auto;
+    }
+    .navbar-ul
+    {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(48, 48, 99);
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: 2s ease;
+    }
+    .navbar-li
+    {
+        display: block;
+        margin: 60px 0px;
+        line-height: 40px;
+        padding: 0;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ .navbar-ul
+    {
+        left: 0;
+    }
+    .venkat
+    {
+        margin: 0;
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 12px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+
+
+#Home
+{
+ margin: 0;
+ padding: auto;
+ height: auto;
+ width: 100%;
+ background-color: rgb(255, 255, 255);
+}
+#Skills
+{
+    margin: 0;
+    padding: auto;
+    height: auto;
+    width: 100%;
+    background-color: rgb(81, 45, 211);
+
+}
+#Contact
+{
+    margin: 0;
+    padding: auto;
+    height: auto;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+
+}
+.footer
+{
+    margin: 0;
+    padding: auto;
+    height: 400px;
+    width: 100%;
+    background:linear-gradient(to right, rgb(0, 0, 0),rgb(15, 47, 192));
+
+}
+.home-flex
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.venkat-image
+{
+    margin-top: 150px;
+    border-radius: 25px;
+    margin-bottom: 150px;
+}
+.venkat-area
+{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border-radius: 25px;
+    line-height: 50px;
+}
+.venkat-png
+{
+    height: 350;
+    width: 350;
+    border-radius: 200%;
+    display: none;
+}
+.profile-para
+{
+    line-height: 20px;
+}
+.get-contact
+{
+    text-decoration: none;
+    background-color: rgb(88, 21, 151);
+    color: white;
+    padding: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    line-height: 150px;
+    border: 1px solid rgb(237, 240, 237);
+    border-radius: 30px;
+    box-shadow: 0 0 15px 0#1e2cc7;
+    transition: 1s;
+
+}
+.get-contact:hover
+{
+    background-color: black;
+    color: white;
+}
+.skills-flex
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+.skill-place
+{
+    height: auto;
+    width: 250px;
+    padding: 25px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: white;
+    color: black;
+}
+.skill-place:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+    border: 1px solid white;
+    box-shadow: 0 0 15px 0#ffffff;;
+    padding: 30px;
+}
+.logo{
+    margin:15px;
+    margin-left: 60px;
+    font-size: 80px;
+    font-weight: 100;
+}
+.center{
+    text-align: center;
+}
+html
+{
+    scroll-behavior: smooth;
+    transition: 5s;
+}
+.contact-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+.form
+{
+    margin-top: 150px;
+    background-color:white;
+    padding: 45px;
+    border-radius: 10px;
+    margin-bottom: 150px;
+}
+.form-group
+{
+    padding: 4px;
+}
+.Contact-me
+{
+    height: 100px;
+    width: 750px;
+    background-color: white;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+.contact-number
+{
+    margin-top: 25px;
+}
+
+.footer-flex
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.copy-right-area
+{
+    margin-top: 150px;
+    color: white;
+}
+.social-area
+{
+    margin-top: 150px;
+    color: white;
+}
+.social-logo
+{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    font-size: 25;
+}
+.social-link
+{
+    color: white;
+}
+.social-link:hover{
+    color:greenyellow;
+}
