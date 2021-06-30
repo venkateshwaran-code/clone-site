@@ -23,13 +23,14 @@
         <ul class="navbar-ul">
             <li class="navbar-li"><a href="#Home" class="a-link" id="a1">Home</a></li>
             <li class="navbar-li"><a href="#Skills" class="a-link">Skills</a></li>
+            <li class="navbar-li"><a href="#Work" class="a-link">Work</a></li>
             <li class="navbar-li"><a href="#Contact" class="a-link">Contact</a></li>
         </ul>
     </nav>
     <div id="Home">
         <div class="home-flex">
             <div class="venkat-area">
-                <h2 class="hey-message">Hey Friends This is Venkat</h2>
+                <h3 class="hey-message">Hey Friends This is 😎 <span class="venkat-red">Venkat</span></h3>
                 <h2 class="occupation">Fresher | Web Designer | UI Developer</h2>
                 <p class="profile-para">I Have Completed B.Tech-IT at Hindusthan College of Engineering and Technology in Coimbatore</p>
                 <p class="profile-para">My Technical Skills are HTML,CSS,Javascript,Bootstrap,Node,Express Js,MongoDB</p>
@@ -60,6 +61,27 @@
             <div class="skill-place">
                     <i class="fa fa-globe logo" aria-hidden="true"></i>
                 <p class="center">Web Development</p>
+            </div>
+        </div>
+    </div>
+    <div id="Work">
+        <h2 class="vote-appname">Voting Application</h2>
+        <div class="vote-app">
+            <form action="/index.html" method="post" class="vote-form">
+                <h2 class="">Who will win</h2>
+                <div class="from-group">
+                    <input type="email" class="form-control" placeholder="Email" name="email">  
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="group1"><span><img src="https://pbs.twimg.com/profile_images/593853947871264769/5sv99dvj.jpg" alt="" srcset="" height="100" width="100"></span>
+                    <input type="radio" name="group1"><span><img src="https://th.bing.com/th/id/Rdb06042ae1bdc25734a768f5103e516a?rik=fAcBrhx0%2b0Rmuw&riu=http%3a%2f%2fwww.sportsgyaani.com%2fwp-content%2fuploads%2f2019%2f11%2fEarly-Life-of-Brock-Lesnar.jpg&ehk=tbws0vj3ypERz6wwN0VNpl4sBZIzZ%2f3Q79znPLx8Ygk%3d&risl=&pid=ImgRaw" alt="" srcset="" height="100" width="100"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-danger" onclick="vote()"> Vote </button>
+                </div>
+            </form>
+            <div class="vote-result">
+                <h5>Result</h5>
             </div>
         </div>
     </div>
