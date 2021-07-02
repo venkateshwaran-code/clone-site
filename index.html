@@ -67,21 +67,22 @@
     <div id="Work">
         <h2 class="vote-appname">Voting Application</h2>
         <div class="vote-app">
-            <form action="/index.html" method="post" class="vote-form">
+            <form action="" method="post" class="vote-form">
                 <h2 class="">Who will win</h2>
                 <div class="from-group">
-                    <input type="email" class="form-control" placeholder="Email" name="email">  
+                    <input type="email" class="form-control" placeholder="Email" id="email">  
                 </div>
                 <div class="form-group">
-                    <input type="radio" name="group1"><span><img src="https://pbs.twimg.com/profile_images/593853947871264769/5sv99dvj.jpg" alt="" srcset="" height="100" width="100"></span>
-                    <input type="radio" name="group1"><span><img src="https://th.bing.com/th/id/Rdb06042ae1bdc25734a768f5103e516a?rik=fAcBrhx0%2b0Rmuw&riu=http%3a%2f%2fwww.sportsgyaani.com%2fwp-content%2fuploads%2f2019%2f11%2fEarly-Life-of-Brock-Lesnar.jpg&ehk=tbws0vj3ypERz6wwN0VNpl4sBZIzZ%2f3Q79znPLx8Ygk%3d&risl=&pid=ImgRaw" alt="" srcset="" height="100" width="100"></span>
+                    <input type="radio" name="group1" id="rd1"><span><img src="https://pbs.twimg.com/profile_images/593853947871264769/5sv99dvj.jpg" alt="" srcset="" height="100" width="100"></span>
+                    <input type="radio" name="group1" id="rd2"><span><img src="https://th.bing.com/th/id/Rdb06042ae1bdc25734a768f5103e516a?rik=fAcBrhx0%2b0Rmuw&riu=http%3a%2f%2fwww.sportsgyaani.com%2fwp-content%2fuploads%2f2019%2f11%2fEarly-Life-of-Brock-Lesnar.jpg&ehk=tbws0vj3ypERz6wwN0VNpl4sBZIzZ%2f3Q79znPLx8Ygk%3d&risl=&pid=ImgRaw" alt="" srcset="" height="100" width="100"></span>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-danger" onclick="vote()"> Vote </button>
+                    <button type="button" class="btn btn-danger" onclick="vote()"> Vote </button>
                 </div>
             </form>
             <div class="vote-result">
-                <h5>Result</h5>
+                <h5 id="result-roman"></h5>
+                <h5 id="result-lesner"></h5>
             </div>
         </div>
     </div>
