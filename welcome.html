@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>welcome</h1>
+    <h2>speech to Text</h2>
+    <button id="btn" onclick="recognition.start()">Start recognition</button>
+    <p id="listen"></p>
+    <h1 id="result"></h1>
+
+    <script>
+        const btn=document.getElementById("btn");
+        const result=document.getElementById("result");
+        const speechRecognition=window.SpeechRecognition || window.webkitSpeechRecognition;
+        const recognition= new speechRecognition();
+        recognition.onstart=function(){
+            document.getElementById("listen").innerText="AI is Listening could you Speak Louder....";
+        }
+        recognition.onresult=function(event){
+            var text=event.results[0][0].transcript;
+            document.getElementById("result").innerHTML=text;
+        }
+    </script>
 </body>
 </html>
